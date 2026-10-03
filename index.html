@@ -1,128 +1,259 @@
 <!DOCTYPE html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Egorova CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екатерина Егорова — резюме</title>
+    <meta name="description" content="Екатерина Егорова: разработчик 1С-Битрикс, учусь на DevOps-инженера.">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
-    <div class="container">
-        <div class="info">
-            <img src=Photo.jpg  alt="Место для моего фото" 
-            class="avatar"/>     
-      
-            <div class="info-text">
-            <h1>Егорова Екатерина</h1> 
-                <p>Я начинающий <strong>Web-разработчик.</strong></p>
-                <p>Я люблю изучать новое, заниматься программированием, творчеством, йогой, а также люблю играть в видео игры.</p>
+<body>
+    <main class="page">
+
+        <!-- Шапка -->
+        <header class="hero">
+            <img class="hero__photo" src="Photo.jpg" alt="Екатерина Егорова" width="180" height="180">
+
+            <div class="hero__text">
+                <p class="hero__prompt">~$ whoami</p>
+                <h1 class="hero__name">Екатерина Егорова</h1>
+                <p class="hero__role">Разработчик 1С-Битрикс · учусь на DevOps-инженера</p>
+                <p class="hero__about">
+                    Делаю сайт и каталог интернет-магазина, автоматизирую рутину магазина.
+                    Иду в DevOps: серверы, базы данных, деплой и автоматизация.
+                    До этого писала игры на C++ под Unreal Engine.
+                </p>
+
+                <ul class="contacts">
+                    <li><a class="chip" href="mailto:egorovakaterinka010@gmail.com">egorovakaterinka010@gmail.com</a></li>
+                    <li><a class="chip" href="https://t.me/paprika_0_0" target="_blank" rel="noopener">Telegram</a></li>
+                    <li><a class="chip" href="https://github.com/PaprikaRina" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a class="chip" href="https://vk.com/id798077953" target="_blank" rel="noopener">VK</a></li>
+                    <li><a class="chip" href="tel:+79652678282">+7 965 267-82-82</a></li>
+                </ul>
             </div>
-        </div>
+        </header>
 
-        <div class="block bg-red" >
-            <h4>Мои социальные сети:</h4>
-            <ol class="social-li">
-                <li><a href="https://vk.com/id798077953" target="_blank">VK</a></li>
-                <li><a href="https://t.me/paprika_0_0" target="_blank">TG</a></li>
-            </ol>
-            <h4>Контакты для связи:</h4>
+        <!-- Стек -->
+        <section class="section">
+            <h2 class="section__title">Стек</h2>
 
-            <ol class="social-li">
-                <li>тел. 8-965-267-82-82</li>
-                <li>эл. почта egorovakaterinka010@gmail.com</li>
-            </ol>
-        </div>
+            <div class="stack">
+                <div class="stack__group">
+                    <h3 class="stack__label">Работаю с</h3>
+                    <ul class="tags">
+                        <li>1С-Битрикс</li>
+                        <li>PHP</li>
+                        <li>HTML</li>
+                        <li>CSS / SCSS</li>
+                        <li>Git</li>
+                        <li>1С</li>
+                    </ul>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__label">Изучаю</h3>
+                    <ul class="tags tags--accent">
+                        <li>Linux</li>
+                        <li>Bash</li>
+                        <li>Сети</li>
+                        <li>SQL</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="stack__group">
+                    <h3 class="stack__label">Было раньше</h3>
+                    <ul class="tags tags--muted">
+                        <li>C++</li>
+                        <li>ООП</li>
+                        <li>Unreal Engine 5</li>
+                        <li>Blueprints</li>
+                        <li>3D-моделирование</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <div class="block bg-green">
-            <h2>Мои хобби:</h2>
-                <ul type="square" class="list">
-                    <li>Изучать 3D моделирование</li>
-                    <li>Изучать Unreal Engine 5(Blueprints, C++)</li>
-                    <li>Видеоигры</li>
-                    <li>Живопись</li>
-                    <li>Йога</li>
-                    <li>Философия</li>
-                </ul>
-        </div>
-        
-        <div class="block bg-yellow">
-            <h2>Опыт работы:</h2>
-                <Table class="table">
-                    <tr>
-                        <td><h3>Лудинг, ООО</h3></td>
-                        <td>Август 2024 — Январь 2025 (6 месяцев)</td>
-                        <td>Специалист сервисного центра</td> 
-                    </tr>
-                    <tr>
-                        <td><h3>ИП Портнова Е.Ш.</h3></td>
-                        <td>Сентябрь 2015 — Сентябрь 2022 (7 лет 1 месяц)</td>
-                        <td>Индивидуальный предприниматель</td> 
-                    </tr>
-                    <tr>
-                        <td><h3>ООО "АВВ-электрощит"</h3></td>
-                        <td>Сентябрь 2021 — Ноябрь 2021 (3 месяца)</td>
-                        <td>Менеджер по персоналу</td>
-                    </tr>
-                    <tr>
-                        <td><h3>ООО "Медея"</h3></td>
-                        <td>Июль 2016 — Август 2021 (5 лет 2 месяца)</td>
-                        <td>Администратор</td>
-                    </tr>
-                    <tr>
-                        <td><h3>БАНК УРАЛСИБ</h3></td>
-                        <td>Август 2015 — Март 2016 (8 месяцев)</td>
-                        <td>Специалист по работе с юридическими лицами</td>
-                    </tr>
-            </Table>
-        </div>
-     
-        <div class="block bg-blue">
-            <h2>Мои сертификаты:</h2>
-                <ul class="link-list">
-                    <li>
-                        <a href="https://drive.google.com/drive/folders/1Zgc3Uv24xavfYo34kdLVXxOT8eG4xjeA?usp=sharing" target="_blank" >Сертификаты курса по гейм-дизайну</a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/17HHYdyRDzA--XCHTz9LcKpyGPQp5aoqJ/view?usp=drive_link" target="_blank" > Сертификат Unreal Engine - полное руководство по разработке на С++ </a>
-                    </li>
-            
-                    <li>
-                        <a href="https://drive.google.com/file/d/1xwX2P1JFm0bBcefsxrqYBVtvlVLAesLu/view?usp=sharing" target="_blank" >Сертификат UE 5 C++ The ultimate Game Developer Course </a>
-                    </li>
-                </ul>
-        </div>
-        
-        <div class="contact">
-            <h2>Связаться со мной:</h2>
+        <!-- Проекты -->
+        <section class="section">
+            <h2 class="section__title">Проекты</h2>
 
-                <form action="/">
-                    <div class="row">
-                        <div class="form-group">
-                            <label for="name">Ваше имя:</label>
-                            <input type="text" id="name" placeholder="Введите Ваше имя..." >
-                        </div>
-                    
-                        <div class="form-group">
-                            <label for="email">Ваш Email:</label>
-                            <input type="email" id="email" placeholder="Введите Ваш email..." >
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="text">Ваше сообщение:</label>
-                        <textarea name="text" id="text" rows="2" cols="15"></textarea>
-                    </div> 
+            <div class="projects">
+                <article class="card">
+                    <p class="card__status">в работе</p>
+                    <h3 class="card__title">«Бухгалтер»</h3>
+                    <p class="card__text">
+                        Система учёта закупок, продаж, наценок, накладных и долгов для поставщика.
+                        Заменила Excel из шести листов. Пишу вместе с ИИ-ассистентом:
+                        ставлю задачи, проверяю код, слежу за базой и запуском.
+                    </p>
+                    <ul class="card__stack">
+                        <li>Node.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Docker</li><li>GitHub Actions</li>
+                    </ul>
+                </article>
 
+                <article class="card">
+                    <p class="card__status">работает</p>
+                    <h3 class="card__title">Telegram-бот помощник</h3>
+                    <p class="card__text">
+                        Личный бот на сервере: напоминания, расписание, учёт финансов.
+                        Связан с Google Таблицами и Google Календарём.
+                    </p>
+                    <ul class="card__stack">
+                        <li>Python</li><li>Telegram Bot API</li><li>Google API</li><li>VPS</li><li>Linux</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <p class="card__status">в работе</p>
+                    <h3 class="card__title">Доброхвостик</h3>
+                    <p class="card__text">
+                        Благотворительная платформа помощи животным. Сделаны дизайн-система
+                        и прототипы двух десятков экранов: каталог, сборы, кабинет, приюты.
+                    </p>
+                    <ul class="card__stack">
+                        <li>HTML</li><li>SCSS</li><li>JavaScript</li><li>Дизайн-система</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <p class="card__status">готово</p>
+                    <h3 class="card__title">
+                        <a href="https://github.com/PaprikaRina/Green_Passenger" target="_blank" rel="noopener">Green Passenger ↗</a>
+                    </h3>
+                    <p class="card__text">
+                        Вёрстка интернет-магазина растений: каталог, акции, оформление заказа.
+                        Адаптив без горизонтальной прокрутки.
+                    </p>
+                    <ul class="card__stack">
+                        <li>HTML</li><li>SCSS</li>
+                    </ul>
+                </article>
+
+                <article class="card card--wide">
+                    <p class="card__status">архив</p>
+                    <h3 class="card__title">Игры на Unreal Engine 5</h3>
+                    <p class="card__text">
+                        Три законченные игры: шутер, RPG и градостроитель.
+                        Участвовала в конкурсе соло-разработчиком.
+                    </p>
+                    <ul class="card__stack">
+                        <li>C++</li><li>Blueprints</li><li>Unreal Engine 5</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Опыт -->
+        <section class="section">
+            <h2 class="section__title">Опыт работы</h2>
+
+            <ol class="timeline">
+                <li class="timeline__item timeline__item--now">
+                    <p class="timeline__date">сейчас</p>
                     <div>
-                        <input class="btn" type="submit" value="Связаться!">
-                    </div> 
-                </form>
-        </div>
+                        <h3 class="timeline__company">Интернет-магазин доставки продуктов</h3>
+                        <p class="timeline__role">Контент-менеджер и разработчик 1С-Битрикс</p>
+                        <ul class="timeline__list">
+                            <li>Веду каталог сайта на 1С-Битрикс и карточки товаров в 1С</li>
+                            <li>Снимаю товары, веду соцсети магазина: ВКонтакте и Telegram</li>
+                            <li>Оформляю заказы клиентов и закупку у поставщиков</li>
+                            <li>Автоматизирую рутину: учёт накладных, бот заказов</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <p class="timeline__date">08.2024 — 01.2025</p>
+                    <div>
+                        <h3 class="timeline__company">ООО «Лудинг»</h3>
+                        <p class="timeline__role">Специалист сервисного центра</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <p class="timeline__date">09.2015 — 09.2022</p>
+                    <div>
+                        <h3 class="timeline__company">ИП Портнова Е. Ш.</h3>
+                        <p class="timeline__role">Индивидуальный предприниматель</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <p class="timeline__date">09.2021 — 11.2021</p>
+                    <div>
+                        <h3 class="timeline__company">ООО «АВВ-электрощит»</h3>
+                        <p class="timeline__role">Менеджер по персоналу</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <p class="timeline__date">07.2016 — 08.2021</p>
+                    <div>
+                        <h3 class="timeline__company">ООО «Медея»</h3>
+                        <p class="timeline__role">Администратор</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <p class="timeline__date">08.2015 — 03.2016</p>
+                    <div>
+                        <h3 class="timeline__company">Банк Уралсиб</h3>
+                        <p class="timeline__role">Специалист по работе с юридическими лицами</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
 
-        <div class="position">
-            <div class="box"></div>
-        </div>    
-    </div>
+        <!-- Учёба -->
+        <section class="section">
+            <h2 class="section__title">Учёба</h2>
+
+            <ul class="study">
+                <li class="study__item">
+                    <span class="study__name">Skillbox · «Профессия DevOps-инженер»</span>
+                    <span class="study__meta">2026, в процессе</span>
+                </li>
+                <li class="study__item">
+                    <span class="study__name">Stepik · FullStack: Git, JavaScript, PHP</span>
+                    <span class="study__meta">в процессе</span>
+                </li>
+                <li class="study__item">
+                    <span class="study__name">Stepik · «Основы SQL»</span>
+                    <span class="study__meta">в процессе</span>
+                </li>
+                <li class="study__item">
+                    <a class="study__name" href="https://drive.google.com/file/d/17HHYdyRDzA--XCHTz9LcKpyGPQp5aoqJ/view?usp=drive_link" target="_blank" rel="noopener">Unreal Engine — полное руководство по разработке на C++ ↗</a>
+                    <span class="study__meta">сертификат</span>
+                </li>
+                <li class="study__item">
+                    <a class="study__name" href="https://drive.google.com/file/d/1xwX2P1JFm0bBcefsxrqYBVtvlVLAesLu/view?usp=sharing" target="_blank" rel="noopener">UE5 C++ The Ultimate Game Developer Course ↗</a>
+                    <span class="study__meta">сертификат</span>
+                </li>
+                <li class="study__item">
+                    <a class="study__name" href="https://drive.google.com/drive/folders/1Zgc3Uv24xavfYo34kdLVXxOT8eG4xjeA?usp=sharing" target="_blank" rel="noopener">Курс по гейм-дизайну ↗</a>
+                    <span class="study__meta">сертификаты</span>
+                </li>
+                <li class="study__item">
+                    <span class="study__name">Высшее экономическое образование</span>
+                    <span class="study__meta"></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Обо мне -->
+        <section class="section">
+            <h2 class="section__title">Кроме кода</h2>
+            <p class="hobby">Йога, философия, живопись, 3D-моделирование и видеоигры.</p>
+        </section>
+
+        <footer class="footer">
+            <p>Эта страница — моя первая работа на HTML. Я её дополняю по мере роста.</p>
+        </footer>
+
+    </main>
 </body>
-</html>
 
+</html>
